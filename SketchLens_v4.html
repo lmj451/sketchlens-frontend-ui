@@ -627,7 +627,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
      "이게 패션 스케치인가?"를 물어 confidence·category를 받고,
      그 값으로 pass(자동 통과) / reject(거절) / unsure(사용자 재확인)를 나눠야 한다.
      지금은 서버가 없어서, 선(잉크) 밀도만 보는 아주 가벼운 로컬 필터로 그 3가지
-     화면 상태만 미리 만들어 둔 것이다. */
+     화면 상태만 미리 만들어 둔 것. */
   function checkRelevance(){
     return new Promise(function(resolve){
       setTimeout(function(){
@@ -688,6 +688,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
       runFullDiagnosis();
     });
   };
+  
 
   apply();
 })();
@@ -696,4 +697,4 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 </html>
 
 
-if
+
